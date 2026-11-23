@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STYLEHUB - Redefine Your Style. Discover premium fashion for men, women, and kids. Shop the latest trends, new arrivals, and exclusive collections.">
+    <meta name="keywords" content="fashion, online store, clothing, men fashion, women fashion, kids fashion, shoes, bags, watches, STYLEHUB">
+    <title>STYLEHUB – Redefine Your Style</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-family='Georgia' font-size='52' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts: Playfair Display (headings) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================= -->
+    <!-- TOP PROMOTION BAR              -->
+    <!-- ============================= -->
+    <div class="promo-bar">
+        <div class="container promo-bar__inner">
+            <span><i class="fa-solid fa-truck-fast"></i> Free shipping on orders above &#8377;999</span>
+            <span class="promo-bar__center">Use code <strong>STYLE50</strong> for an extra 50% off on sale items</span>
+            <span class="promo-bar__right"><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+        </div>
+    </div>
+
+    <!-- ============================= -->
+    <!-- STICKY NAVIGATION BAR          -->
+    <!-- ============================= -->
+    <header class="header" id="header">
+        <nav class="navbar container" aria-label="Primary navigation">
+            <!-- Logo -->
+            <a href="#home" class="logo" aria-label="STYLEHUB home">
+                STYLE<span class="logo__accent">HUB</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-links__item active">Home</a></li>
+                <li><a href="#men" class="nav-links__item">Men</a></li>
+                <li><a href="#women" class="nav-links__item">Women</a></li>
+                <li><a href="#kids" class="nav-links__item">Kids</a></li>
+                <li><a href="#new-arrivals" class="nav-links__item">New Arrivals</a></li>
+                <li><a href="#collections" class="nav-links__item">Collections</a></li>
+                <li><a href="#sale" class="nav-links__item nav-links__item--sale">Sale</a></li>
+            </ul>
+
+            <!-- Action Icons -->
+            <div class="nav-actions">
+                <!-- Search -->
+                <button class="icon-btn" id="searchToggle" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <!-- Wishlist -->
+                <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+
+                <!-- Cart -->
+                <button class="icon-btn" id="cartToggle" aria-label="Shopping cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+
+                <!-- Login / Sign Up -->
+                <a href="#" class="btn btn--outline btn--sm nav-actions__login">Login / Sign Up</a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Search Bar (slides down) -->
+        <div class="search-bar" id="searchBar">
+            <div class="container search-bar__inner">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="searchInput" placeholder="Search for products, categories, brands..." aria-label="Search products">
+                <button class="btn btn--dark btn--sm" id="searchSubmit">Search</button>
+                <button class="icon-btn" id="searchClose" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================= -->
+    <!-- HERO SECTION                   -->
+    <!-- ============================= -->
+    <section class="hero" id="home">
+        <div class="hero__image" aria-hidden="true"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+            <span class="hero__label">NEW SEASON COLLECTION 2026</span>
+            <h1 class="hero__title">STYLE THAT<br><span>DEFINES YOU.</span></h1>
+            <p class="hero__subtitle">Discover the latest trends. Express your individuality.</p>
+            <div class="hero__buttons">
+                <a href="#men" class="btn btn--light">Shop Men</a>
+                <a href="#women" class="btn btn--outline-light">Shop Women</a>
+            </div>
+        </div>
+        <a href="#categories" class="hero__scroll" aria-label="Scroll down">
+            <span>SCROLL</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SHOP BY CATEGORY              -->
+    <!-- ============================= -->
+    <section class="section categories" id="categories">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__eyebrow">Curated Edit</span>
+                <h2 class="section__title">Shop By Category</h2>
+                <p class="section__intro">Explore handpicked collections crafted for every occasion and every individual.</p>
+            </div>
+
+            <div class="category-grid">
+                <!-- Men -->
+                <article class="category-card" id="men">
+                    <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=600&q=80"
+                         alt="Man wearing a stylish tailored coat" loading="lazy">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Men's Fashion</h3>
+                        <a href="#" class="category-card__btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Women -->
+                <article class="category-card" id="women">
+                    <img src="https://images.unsplash.com/photo-1485462537746-965f33f7f6a7?w=600&q=80"
+                         alt="Woman in an elegant beige ensemble" loading="lazy">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Women's Fashion</h3>
+                        <a href="#" class="category-card__btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Kids -->
+                <article class="category-card" id="kids">
+                    <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=600&q=80"
+                         alt="Children in stylish casual outfits" loading="lazy">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Kids' Fashion</h3>
+                        <a href="#" class="category-card__btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Shoes & Sneakers -->
+                <article class="category-card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80"
+                         alt="Premium white sneakers" loading="lazy">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Shoes & Sneakers</h3>
+                        <a href="#" class="category-card__btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Bags & Accessories -->
+                <article class="category-card">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80"
+                         alt="Luxury leather handbag in tan" loading="lazy">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Bags & Accessories</h3>
+                        <a href="#" class="category-card__btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Watches -->
+                <article class="category-card">
+                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&q=80"
+                         alt="Premium wristwatch with leather strap" loading="lazy">
+                    <div class="category-card__overlay">
+                        <h3 class="category-card__title">Watches</h3>
+                        <a href="#" class="category-card__btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- TRENDING PRODUCTS             -->
+    <!-- ============================= -->
+    <section class="section trending" id="trending">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__eyebrow">Most Wanted</span>
+                <h2 class="section__title">Trending Now</h2>
+                <p class="section__intro">The pieces everyone's talking about this season.</p>
+            </div>
+
+            <div class="product-grid" id="trendingGrid">
+                <!-- Products are rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- FEATURED COLLECTION           -->
+    <!-- ============================= -->
+    <section class="section featured-collection" id="collections">
+        <div class="container">
+            <div class="section__head section__head--light">
+                <span class="section__eyebrow">Editorial</span>
+                <h2 class="section__title">The New Season Collection</h2>
+                <p class="section__intro">A curated edit of seasonal must-haves — where contemporary design meets timeless elegance.</p>
+            </div>
+
+            <div class="featured-layout">
+                <!-- Large left image -->
+                <article class="featured-tile featured-tile--lg">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80"
+                         alt="Fashion model in autumn editorial styling" loading="lazy">
+                    <div class="featured-tile__caption">
+                        <span class="featured-tile__tag">For Her</span>
+                        <h3>Effortless Elegance</h3>
+                        <p>Fluid silhouettes and earthy tones for the modern woman.</p>
+                        <a href="#women" class="btn btn--light btn--sm">Explore Collection</a>
+                    </div>
+                </article>
+
+                <!-- Right column with two stacked images -->
+                <div class="featured-stack">
+                    <article class="featured-tile">
+                        <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=700&q=80"
+                             alt="Man in minimalist tailored fashion" loading="lazy">
+                        <div class="featured-tile__caption">
+                            <span class="featured-tile__tag">For Him</span>
+                            <h3>Tailored Modernism</h3>
+                            <p>Sharp lines, refined fabrics, understated confidence.</p>
+                            <a href="#men" class="btn btn--light btn--sm">Explore Collection</a>
+                        </div>
+                    </article>
+
+                    <article class="featured-tile">
+                        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=700&q=80"
+                             alt="Editorial fashion couple styling" loading="lazy">
+                        <div class="featured-tile__caption">
+                            <span class="featured-tile__tag">Together</span>
+                            <h3>The Statement Edit</h3>
+                            <p>Bold pieces that speak before you do.</p>
+                            <a href="#" class="btn btn--light btn--sm">Explore Collection</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SPECIAL OFFERS BANNER         -->
+    <!-- ============================= -->
+    <section class="section offer-banner" id="sale">
+        <div class="container">
+            <div class="offer-banner__inner">
+                <div class="offer-banner__image" aria-hidden="true"></div>
+                <div class="offer-banner__overlay"></div>
+                <div class="offer-banner__content">
+                    <span class="offer-banner__label">Limited Time</span>
+                    <h2 class="offer-banner__title">MEGA FASHION SALE!</h2>
+                    <p class="offer-banner__subtitle">Upgrade Your Wardrobe with Up to 50% OFF.</p>
+                    <div class="offer-banner__code">
+                        <span>Use Code</span>
+                        <strong>STYLE50</strong>
+                    </div>
+                    <a href="#trending" class="btn btn--light">Shop Sale</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- NEW ARRIVALS                  -->
+    <!-- ============================= -->
+    <section class="section new-arrivals" id="new-arrivals">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__eyebrow">Just In</span>
+                <h2 class="section__title">New Arrivals</h2>
+                <p class="section__intro">Fresh drops to refresh your wardrobe this week.</p>
+            </div>
+
+            <div class="product-grid" id="newArrivalsGrid">
+                <!-- Products are rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- WHY SHOP WITH US              -->
+    <!-- ============================= -->
+    <section class="section features">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__eyebrow">The STYLEHUB Promise</span>
+                <h2 class="section__title">Why Shop With Us?</h2>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-card__icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>Free Shipping</h3>
+                    <p>Enjoy free delivery on all orders above &#8377;999, anywhere in India.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Secure Payments</h3>
+                    <p>100% secure online payments with end-to-end encryption for your peace of mind.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-card__icon"><i class="fa-solid fa-rotate-left"></i></div>
+                    <h3>Easy 7-Day Returns</h3>
+                    <p>Changed your mind? Return any item within 7 days, no questions asked.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-card__icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our style concierge is available round the clock to assist you.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- NEWSLETTER                    -->
+    <!-- ============================= -->
+    <section class="newsletter">
+        <div class="container newsletter__inner">
+            <div class="newsletter__text">
+                <span class="section__eyebrow">Join the Club</span>
+                <h2 class="newsletter__title">GET 15% OFF YOUR FIRST ORDER!</h2>
+                <p>Subscribe to receive fashion updates, exclusive offers, and early access to new drops — straight to your inbox.</p>
+            </div>
+            <form class="newsletter__form" id="newsletterForm" novalidate>
+                <input type="email" id="newsletterEmail" placeholder="Enter your email address" aria-label="Email address" required>
+                <button type="submit" class="btn btn--dark">Subscribe</button>
+            </form>
+            <p class="newsletter__note" id="newsletterMsg"></p>
+        </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- FOOTER                        -->
+    <!-- ============================= -->
+    <footer class="footer">
+        <div class="container footer__top">
+            <!-- Brand -->
+            <div class="footer__col footer__brand">
+                <a href="#home" class="logo logo--light">STYLE<span class="logo__accent">HUB</span></a>
+                <p>STYLEHUB is a premium fashion destination redefining style for the modern individual. Curated collections, timeless designs, and uncompromising quality.</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer__col">
+                <h4 class="footer__heading">Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#kids">Kids</a></li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="footer__col">
+                <h4 class="footer__heading">Shop</h4>
+                <ul>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Women's Fashion</a></li>
+                    <li><a href="#">Kids' Fashion</a></li>
+                    <li><a href="#">Shoes & Sneakers</a></li>
+                    <li><a href="#">Bags & Accessories</a></li>
+                    <li><a href="#">Watches</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Support -->
+            <div class="footer__col">
+                <h4 class="footer__heading">Customer Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer__col footer__contact">
+                <h4 class="footer__heading">Get In Touch</h4>
+                <ul class="footer__contact-list">
+                    <li><i class="fa-solid fa-location-dot"></i> <span>STYLEHUB HQ, Bandra Kurla Complex, Mumbai 400051, India</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@stylehub.in">hello@stylehub.in</a></li>
+                    <li><i class="fa-solid fa-clock"></i> <span>Mon – Sun, 9:00 AM – 9:00 PM IST</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container footer__bottom-inner">
+                <p>&copy; 2026 STYLEHUB. All rights reserved. Crafted with passion in India.</p>
+                <div class="footer__payments">
+                    <span>We Accept:</span>
+                    <i class="fa-brands fa-cc-visa" aria-label="Visa"></i>
+                    <i class="fa-brands fa-cc-mastercard" aria-label="Mastercard"></i>
+                    <i class="fa-brands fa-cc-amex" aria-label="American Express"></i>
+                    <i class="fa-brands fa-cc-paypal" aria-label="PayPal"></i>
+                    <i class="fa-brands fa-google-pay" aria-label="Google Pay"></i>
+                    <i class="fa-brands fa-apple-pay" aria-label="Apple Pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================= -->
+    <!-- CART DRAWER                   -->
+    <!-- ============================= -->
+    <div class="overlay" id="overlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+        <div class="cart-drawer__head">
+            <h3>Your Shopping Bag (<span id="cartCountInner">0</span>)</h3>
+            <button class="icon-btn" id="cartClose" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-drawer__body" id="cartBody">
+            <!-- Cart items rendered by JS -->
+        </div>
+        <div class="cart-drawer__foot" id="cartFoot">
+            <!-- Subtotal / total / checkout rendered by JS -->
+        </div>
+    </aside>
+
+    <!-- ============================= -->
+    <!-- QUICK VIEW MODAL              -->
+    <!-- ============================= -->
+    <div class="modal" id="quickViewModal" aria-hidden="true" role="dialog" aria-label="Quick view">
+        <div class="modal__box">
+            <button class="icon-btn modal__close" id="quickViewClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal__content" id="quickViewContent">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
